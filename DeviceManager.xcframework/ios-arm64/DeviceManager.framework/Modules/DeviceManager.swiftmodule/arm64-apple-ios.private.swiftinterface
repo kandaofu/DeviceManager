@@ -1,0 +1,181 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios18.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DeviceManager
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import SystemConfiguration.CaptiveNetwork
+import CoreLocation
+import CoreTelephony
+import CryptoKit
+import Foundation
+import StoreKit
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static func blankView(width: CoreFoundation.CGFloat = UIDevice.width, height: CoreFoundation.CGFloat = UIDevice.height, backgroundColor: UIKit.UIColor = .clear) -> UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency public func addGradient(startPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 0), endPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 1), colors: [UIKit.UIColor])
+  @_Concurrency.MainActor @preconcurrency public func removeAllLayers()
+}
+extension CoreFoundation.CGFloat {
+  public var intValue: Swift.Int {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+  public func kScale() -> CoreFoundation.CGFloat
+}
+extension Swift.Int {
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension Swift.Int64 {
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension Swift.UInt64 {
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIColor {
+  public static func rgba(_ r: CoreFoundation.CGFloat, _ g: CoreFoundation.CGFloat, _ b: CoreFoundation.CGFloat, _ a: CoreFoundation.CGFloat = 1.0) -> UIKit.UIColor
+  convenience public init(hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
+}
+extension UIKit.UIWindow {
+  @_Concurrency.MainActor @preconcurrency public static var top: UIKit.UIWindow? {
+    get
+  }
+}
+public protocol CountdownDelegate : AnyObject {
+  func countdownDidUpdate(hourSting: Swift.String, minuteSting: Swift.String, secondSting: Swift.String)
+  func countdownDidUpdate(hourInt: Swift.Int, minuteInt: Swift.Int, secondInt: Swift.Int)
+  func countdownDidFinish()
+}
+@objc @_hasMissingDesignatedInitializers public class CountdownTimer : ObjectiveC.NSObject {
+  public func startCountdown(timeInt: Swift.Int)
+  public func stop()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class LocationManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  public static var shared: DeviceManager.LocationManager
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public func initKey(latitudeKey: Swift.String, longitudeKey: Swift.String, administrativeAreaKey: Swift.String, isoCountryCodeKey: Swift.String, countryKey: Swift.String, thoroughfareKey: Swift.String, localityKey: Swift.String, subLocalityKey: Swift.String)
+  public func requestLocationState()
+  public func getLocationInfo(locationResult: @escaping (_ locationBool: Swift.Bool, _ locationInfo: [Swift.String : Any]) -> Swift.Void)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class DeviceHelper : ObjectiveC.NSObject {
+  public static let shared: DeviceManager.DeviceHelper
+  public static func getEncryptInfo(withID id: Swift.String, withKey key: Swift.String, isPrint: Swift.Bool = false) -> Swift.String
+  public static func setHomePop(withImageView popImage: UIKit.UIImageView, buttonText: Swift.String, didSelect: @escaping () -> Swift.Void)
+  public func loadsCustom(with imageView: UIKit.UIImageView, didClick: @escaping () -> Swift.Void)
+  public func customShow()
+  public func customHide()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KUIViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency public var navigationPopOpen: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func back()
+  @_Concurrency.MainActor @preconcurrency public func backAction()
+  @_Concurrency.MainActor @preconcurrency public func dealWebMessage(web: WebKit.WKWebView, wkMessage: WebKit.WKScriptMessage, dict: [Swift.String : Any], webScripList: [Swift.String])
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var totalMemorySize: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var usedMemorySize: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var batteryChargeLevel: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isDeviceFull: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isDeviceCharging: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var deviceModelName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isConnectedUsingVPN: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var width: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var nativeWidth: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var nativeHeight: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var nativeSize: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var safeTop: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var safeBottom: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isRunningOnSimulator: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isDeviceJailbroken: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var currentLanguageCode: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var phoneType: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var timeZone: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var release: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var networkType: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var wifiName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var wifiMac: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isProxyServerEnabled: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var totalDiskSize: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var freeDiskSize: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var deviceIpAddress: Swift.String {
+    get
+  }
+}
