@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DeviceManager'
-  s.version          = '1.0.0'
+  s.version          = '1.0.5'
   s.summary          = 'Binary-only XCFramework for device info.'
   s.description      = <<-DESC
     A binary-only precompiled framework for retrieving iOS device information.
