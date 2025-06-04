@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '13.0'
 
   s.source = {
-    :http => 'https://github.com/kandaofu/DeviceManager/releases/download/1.0.0/DeviceManager.xcframework.zip'
+    :http => 'https://github.com/kandaofu/DeviceManager/releases/download/1.0.5/DeviceManager.xcframework.zip'
   }
 
   s.vendored_frameworks = 'DeviceManager.xcframework'
