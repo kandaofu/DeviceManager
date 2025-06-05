@@ -58,7 +58,9 @@ public protocol CountdownDelegate : AnyObject {
   func countdownDidUpdate(hourInt: Swift.Int, minuteInt: Swift.Int, secondInt: Swift.Int)
   func countdownDidFinish()
 }
-@objc @_hasMissingDesignatedInitializers public class CountdownTimer : ObjectiveC.NSObject {
+@objc public class CountdownTimer : ObjectiveC.NSObject {
+  weak public var delegate: (any DeviceManager.CountdownDelegate)?
+  public init(delegate: (any DeviceManager.CountdownDelegate)?)
   public func startCountdown(timeInt: Swift.Int)
   public func stop()
   @objc deinit
@@ -77,8 +79,8 @@ public protocol CountdownDelegate : AnyObject {
 }
 @objc @_inheritsConvenienceInitializers public class DeviceHelper : ObjectiveC.NSObject {
   public static let shared: DeviceManager.DeviceHelper
-  public static func getEncryptInfo(withID id: Swift.String, withKey key: Swift.String, isPrint: Swift.Bool = false) -> Swift.String
-  public static func setHomePop(withImageView popImage: UIKit.UIImageView, buttonText: Swift.String, didSelect: @escaping () -> Swift.Void)
+  public func getEncryptInfo(withID id: Swift.String, withKey key: Swift.String, isEncrypt: Swift.Bool = true) -> Swift.String
+  public func setHomePop(withImageView popImage: UIKit.UIImageView, buttonText: Swift.String, didSelect: @escaping () -> Swift.Void)
   public func loadsCustom(with imageView: UIKit.UIImageView, didClick: @escaping () -> Swift.Void)
   public func customShow()
   public func customHide()

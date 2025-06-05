@@ -161,6 +161,144 @@
         "printedName": "CountdownTimer",
         "children": [
           {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any DeviceManager.CountdownDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvp",
+            "mangledName": "$s13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DeviceManager.CountdownDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CountdownDelegate",
+                        "printedName": "any DeviceManager.CountdownDelegate",
+                        "usr": "s:13DeviceManager17CountdownDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvg",
+                "mangledName": "$s13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DeviceManager.CountdownDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CountdownDelegate",
+                        "printedName": "any DeviceManager.CountdownDelegate",
+                        "usr": "s:13DeviceManager17CountdownDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvs",
+                "mangledName": "$s13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvM",
+                "mangledName": "$s13DeviceManager14CountdownTimerC8delegateAA0C8Delegate_pSgvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CountdownTimer",
+                "printedName": "DeviceManager.CountdownTimer",
+                "usr": "c:@M@DeviceManager@objc(cs)CountdownTimer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DeviceManager.CountdownDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CountdownDelegate",
+                    "printedName": "any DeviceManager.CountdownDelegate",
+                    "usr": "s:13DeviceManager17CountdownDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13DeviceManager14CountdownTimerC8delegateAcA0C8Delegate_pSg_tcfc",
+            "mangledName": "$s13DeviceManager14CountdownTimerC8delegateAcA0C8Delegate_pSg_tcfc",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "startCountdown",
             "printedName": "startCountdown(timeInt:)",
@@ -242,7 +380,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -1020,7 +1157,7 @@
           {
             "kind": "Function",
             "name": "getEncryptInfo",
-            "printedName": "getEncryptInfo(withID:withKey:isPrint:)",
+            "printedName": "getEncryptInfo(withID:withKey:isEncrypt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1049,12 +1186,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC14getEncryptInfo6withID0G3Key7isPrintS2S_SSSbtFZ",
-            "mangledName": "$s13DeviceManager0A6HelperC14getEncryptInfo6withID0G3Key7isPrintS2S_SSSbtFZ",
+            "usr": "s:13DeviceManager0A6HelperC14getEncryptInfo6withID0G3Key02isE0S2S_SSSbtF",
+            "mangledName": "$s13DeviceManager0A6HelperC14getEncryptInfo6withID0G3Key02isE0S2S_SSSbtF",
             "moduleName": "DeviceManager",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1101,12 +1236,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC10setHomePop13withImageView10buttonText9didSelectySo07UIImageI0C_SSyyctFZ",
-            "mangledName": "$s13DeviceManager0A6HelperC10setHomePop13withImageView10buttonText9didSelectySo07UIImageI0C_SSyyctFZ",
+            "usr": "s:13DeviceManager0A6HelperC10setHomePop13withImageView10buttonText9didSelectySo07UIImageI0C_SSyyctF",
+            "mangledName": "$s13DeviceManager0A6HelperC10setHomePop13withImageView10buttonText9didSelectySo07UIImageI0C_SSyyctF",
             "moduleName": "DeviceManager",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1172,7 +1305,8 @@
             "mangledName": "$s13DeviceManager0A6HelperC10customShowyyF",
             "moduleName": "DeviceManager",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1192,7 +1326,8 @@
             "mangledName": "$s13DeviceManager0A6HelperC10customHideyyF",
             "moduleName": "DeviceManager",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5593,72 +5728,72 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 536,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "IntegerLiteral",
       "offset": 544,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 577,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "IntegerLiteral",
       "offset": 585,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 2367,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 2413,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 2429,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 2444,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/UIKKit.swift",
       "kind": "FloatLiteral",
       "offset": 2523,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/CountdownTimer.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/CountdownTimer.swift",
       "kind": "IntegerLiteral",
-      "offset": 479,
+      "offset": 486,
       "length": 1,
       "value": "0"
     },
@@ -5698,77 +5833,77 @@
       "value": "0.23"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 293,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 509,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 612,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/LocationManager.swift",
       "kind": "BooleanLiteral",
       "offset": 696,
       "length": 5,
@@ -5777,9 +5912,9 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/DeviceHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 327,
-      "length": 5,
-      "value": "false"
+      "offset": 331,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/HomePopUpHelper.swift",
@@ -5950,7 +6085,7 @@
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KUIViewController.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/KUIViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 270,
       "length": 4,
