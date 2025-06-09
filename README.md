@@ -12,6 +12,12 @@
   - loadsCustom: Set the global customer service floating button
   - customShow: Show the customer service button
   - customHide: Hide the customer service button
+  
+  - getImage: Pull up the album camera to get the picture
+  - getContact: Get the contact name and phone number selected by the user
+  
+  - openSetting: Open the system settings page
+  - shareWithAppActivities: Share file resources to external
 
 
 ##** LocationManager
@@ -54,4 +60,21 @@ Alternatively, you can directly call backAction() under the back() method to imp
 
   - dealWebMessage(web: WKWebView, wkMessage: WKScriptMessage, dict: [String : Any], webScripList: [String]) 
   *\ Handling WKScriptMessage, custom events
+  
+  
+##** KTextField
 
+ - onDeleteBackward: Listening for delete actions
+ 
+ var placeHolderColor: Extended setting placeHolderColor
+ 
+
+##** KToast
+
+ - show
+ 
+ - loading
+ 
+ - hideLoading
+ 
+ 
