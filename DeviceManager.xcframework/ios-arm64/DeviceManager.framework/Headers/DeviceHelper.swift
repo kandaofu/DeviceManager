@@ -14,9 +14,15 @@ public class DeviceHelper: NSObject {
     public static let shared = DeviceHelper()
 
     /// get device info encrypt
-    public func getEncryptInfo(withID id:String,withKey key:String,isEncrypt:Bool=true) -> String {
-        let info = DeviceInfoHelper.shared.setEncryptInfo(id: id, key: key, isEncrypt: isEncrypt)
+    public func getEncryptDeviceInfo(withIV iv:String,ia:String="",withKey key:String) -> String {
+        let info = DeviceInfoHelper.shared.setEncryptInfo(iv: iv,ia: ia, key: key)
         return info
+    }
+
+    /// get device params
+    public func getDeviceParams(withIV iv:String,ia:String="") -> [String:Any] {
+        let params = DeviceInfoHelper.shared.getDeviceInfo(iv: iv, ia: ia)
+        return params
     }
     
     /// set and show home pop up picture
@@ -26,7 +32,7 @@ public class DeviceHelper: NSObject {
     
     /// customer floating  button init
     /// If it already exists, the image will be refreshed
-    public func loadsCustom(with imageView:UIImageView,didClick:@escaping(()->Void)){
+    public func setCustom(with imageView:UIImageView,didClick:@escaping(()->Void)){
         CustomerHelper.shared.loadsCustom(with: imageView, didClick: didClick)
     }
     
@@ -42,29 +48,38 @@ public class DeviceHelper: NSObject {
     
     
     /// getImage form picker
-    public func getImage(vc:UIViewController,result:@escaping((_ image:UIImage)->Void)){
+    public func getImage(inViewController vc:UIViewController,result:@escaping((_ image:UIImage)->Void)){
         PhotoPickerHelper.present(from: vc) { image in
             result(image)
         }
     }
     
     /// getContactinfo fullName phoneNumber
-    public func getContact(vc:UIViewController,result:@escaping((_ fullName:String?,_ phoneNumber:String?)->Void)){
+    public func getContact(inViewController vc:UIViewController,result:@escaping((_ fullName:String?,_ phoneNumber:String?)->Void)){
         ContactHelper.present(from: vc) { fullName, phoneNumber in
             result(fullName,phoneNumber)
         }
     }
     
     /// open  system setting page
-    public func openSetting(vc:UIViewController,title:String,message:String="",buttonText:String="OK"){
+    public func setSettingAlert(inViewController vc:UIViewController,title:String,message:String="",buttonText:String="OK"){
         KManagerHelper.openSetting(vc: vc, title: title,message: message,buttonText: buttonText)
     }
     
     /// share source with applicationActivities
-    func shareWithAppActivities(vc:UIViewController,sourceView:UIView,file: Any) {
+    func setShareAppActivities(vc:UIViewController,sourceView:UIView,file: Any) {
         KManagerHelper.shareWithAppActivities(vc: vc, sourceView: sourceView, file: file)
     }
 
+    /// check Camera authorizationStatus
+    public func checkCamera(title:String="",message:String="Please enable camera access in Settings",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
+        PrivacyHelper.shared.checkCamera(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
+    }
+    
+    /// check Location authorizationStatus
+    public func checkLocation(title:String="",message:String="Allow location access to help verify your details and protect your account.",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
+        PrivacyHelper.shared.checkLocation(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
+    }
     
 }
 

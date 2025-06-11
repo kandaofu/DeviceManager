@@ -568,6 +568,30 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SystemConfiguration.CaptiveNetwork",
+        "printedName": "SystemConfiguration.CaptiveNetwork",
+        "declKind": "Import",
+        "moduleName": "DeviceManager"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "DeviceManager"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeviceManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CountdownDelegate",
         "printedName": "CountdownDelegate",
@@ -1210,6 +1234,30 @@
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DeviceManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "DeviceManager"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DeviceManager"
       },
       {
         "kind": "Import",
@@ -1928,8 +1976,8 @@
           },
           {
             "kind": "Function",
-            "name": "getEncryptInfo",
-            "printedName": "getEncryptInfo(withID:withKey:isEncrypt:)",
+            "name": "getEncryptDeviceInfo",
+            "printedName": "getEncryptDeviceInfo(withIV:ia:withKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1947,19 +1995,67 @@
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
+                "hasDefaultArg": true,
                 "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC14getEncryptInfo6withID0G3Key02isE0S2S_SSSbtF",
-            "mangledName": "$s13DeviceManager0A6HelperC14getEncryptInfo6withID0G3Key02isE0S2S_SSSbtF",
+            "usr": "s:13DeviceManager0A6HelperC010getEncryptA4Info6withIV2ia0G3KeyS2S_S2StF",
+            "mangledName": "$s13DeviceManager0A6HelperC010getEncryptA4Info6withIV2ia0G3KeyS2S_S2StF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeviceParams",
+            "printedName": "getDeviceParams(withIV:ia:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DeviceManager0A6HelperC03getA6Params6withIV2iaSDySSypGSS_SStF",
+            "mangledName": "$s13DeviceManager0A6HelperC03getA6Params6withIV2iaSDySSypGSS_SStF",
             "moduleName": "DeviceManager",
             "declAttributes": [
               "AccessControl",
@@ -2019,8 +2115,8 @@
           },
           {
             "kind": "Function",
-            "name": "loadsCustom",
-            "printedName": "loadsCustom(with:didClick:)",
+            "name": "setCustom",
+            "printedName": "setCustom(with:didClick:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2052,8 +2148,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC11loadsCustom4with8didClickySo11UIImageViewC_yyctF",
-            "mangledName": "$s13DeviceManager0A6HelperC11loadsCustom4with8didClickySo11UIImageViewC_yyctF",
+            "usr": "s:13DeviceManager0A6HelperC9setCustom4with8didClickySo11UIImageViewC_yyctF",
+            "mangledName": "$s13DeviceManager0A6HelperC9setCustom4with8didClickySo11UIImageViewC_yyctF",
             "moduleName": "DeviceManager",
             "declAttributes": [
               "AccessControl",
@@ -2106,7 +2202,7 @@
           {
             "kind": "Function",
             "name": "getImage",
-            "printedName": "getImage(vc:result:)",
+            "printedName": "getImage(inViewController:result:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2139,8 +2235,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC8getImage2vc6resultySo16UIViewControllerC_ySo7UIImageCctF",
-            "mangledName": "$s13DeviceManager0A6HelperC8getImage2vc6resultySo16UIViewControllerC_ySo7UIImageCctF",
+            "usr": "s:13DeviceManager0A6HelperC8getImage16inViewController6resultySo06UIViewH0C_ySo7UIImageCctF",
+            "mangledName": "$s13DeviceManager0A6HelperC8getImage16inViewController6resultySo06UIViewH0C_ySo7UIImageCctF",
             "moduleName": "DeviceManager",
             "declAttributes": [
               "AccessControl",
@@ -2151,7 +2247,7 @@
           {
             "kind": "Function",
             "name": "getContact",
-            "printedName": "getContact(vc:result:)",
+            "printedName": "getContact(inViewController:result:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2213,8 +2309,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC10getContact2vc6resultySo16UIViewControllerC_ySSSg_AItctF",
-            "mangledName": "$s13DeviceManager0A6HelperC10getContact2vc6resultySo16UIViewControllerC_ySSSg_AItctF",
+            "usr": "s:13DeviceManager0A6HelperC10getContact16inViewController6resultySo06UIViewH0C_ySSSg_AItctF",
+            "mangledName": "$s13DeviceManager0A6HelperC10getContact16inViewController6resultySo06UIViewH0C_ySSSg_AItctF",
             "moduleName": "DeviceManager",
             "declAttributes": [
               "AccessControl",
@@ -2224,8 +2320,8 @@
           },
           {
             "kind": "Function",
-            "name": "openSetting",
-            "printedName": "openSetting(vc:title:message:buttonText:)",
+            "name": "setSettingAlert",
+            "printedName": "setSettingAlert(inViewController:title:message:buttonText:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2260,8 +2356,126 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13DeviceManager0A6HelperC11openSetting2vc5title7message10buttonTextySo16UIViewControllerC_S3StF",
-            "mangledName": "$s13DeviceManager0A6HelperC11openSetting2vc5title7message10buttonTextySo16UIViewControllerC_S3StF",
+            "usr": "s:13DeviceManager0A6HelperC15setSettingAlert16inViewController5title7message10buttonTextySo06UIViewI0C_S3StF",
+            "mangledName": "$s13DeviceManager0A6HelperC15setSettingAlert16inViewController5title7message10buttonTextySo06UIViewI0C_S3StF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkCamera",
+            "printedName": "checkCamera(title:message:buttonText:authorizedBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DeviceManager0A6HelperC11checkCamera5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "mangledName": "$s13DeviceManager0A6HelperC11checkCamera5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkLocation",
+            "printedName": "checkLocation(title:message:buttonText:authorizedBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DeviceManager0A6HelperC13checkLocation5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "mangledName": "$s13DeviceManager0A6HelperC13checkLocation5title7message10buttonText15authorizedBlockySS_S2SyyctF",
             "moduleName": "DeviceManager",
             "declAttributes": [
               "AccessControl",
@@ -2452,6 +2666,1146 @@
         "printedName": "KTableViewCell",
         "children": [
           {
+            "kind": "Var",
+            "name": "cellEmailOffsetX",
+            "printedName": "cellEmailOffsetX",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC16cellEmailOffsetX14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC16cellEmailOffsetX12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC16cellEmailOffsetX14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC16cellEmailOffsetX12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC16cellEmailOffsetX14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC16cellEmailOffsetX12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC16cellEmailOffsetX14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC16cellEmailOffsetX12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtonHeight",
+            "printedName": "emailButtonHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC17emailButtonHeight14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC17emailButtonHeight12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC17emailButtonHeight14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC17emailButtonHeight12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC17emailButtonHeight14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC17emailButtonHeight12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC17emailButtonHeight14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC17emailButtonHeight12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtonLeftMargin",
+            "printedName": "emailButtonLeftMargin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC21emailButtonLeftMargin14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonLeftMargin12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC21emailButtonLeftMargin14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonLeftMargin12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC21emailButtonLeftMargin14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonLeftMargin12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC21emailButtonLeftMargin14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonLeftMargin12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtonAttrColor",
+            "printedName": "emailButtonAttrColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonAttrColorSo7UIColorCSgvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtonTextColor",
+            "printedName": "emailButtonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtonTextColorSo7UIColorCvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtonFirstColor",
+            "printedName": "emailButtonFirstColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC21emailButtonFirstColorSo7UIColorCvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtonFont",
+            "printedName": "emailButtonFont",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC15emailButtonFontSo6UIFontCvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailButtontitleLeft",
+            "printedName": "emailButtontitleLeft",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC20emailButtontitleLeft14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtontitleLeft12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtontitleLeft14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtontitleLeft12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtontitleLeft14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtontitleLeft12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC20emailButtontitleLeft14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC20emailButtontitleLeft12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailFootterArray",
+            "printedName": "emailFootterArray",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC17emailFootterArraySaySSGvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailHasLine",
+            "printedName": "emailHasLine",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC12emailHasLineSbvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC12emailHasLineSbvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC12emailHasLineSbvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC12emailHasLineSbvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC12emailHasLineSbvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC12emailHasLineSbvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC12emailHasLineSbvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC12emailHasLineSbvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailLineColor",
+            "printedName": "emailLineColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC14emailLineColorSo7UIColorCvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didEndFill",
+            "printedName": "didEndFill",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC10didEndFillyySScvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC10didEndFillyySScvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC10didEndFillyySScvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC10didEndFillyySScvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC10didEndFillyySScvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC10didEndFillyySScvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC10didEndFillyySScvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC10didEndFillyySScvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "awakeFromNib",
             "printedName": "awakeFromNib()",
@@ -2474,6 +3828,174 @@
               "Preconcurrency",
               "Custom",
               "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEmailFiled",
+            "printedName": "setEmailFiled(textFiled:tableView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITextField",
+                "printedName": "UIKit.UITextField",
+                "usr": "c:objc(cs)UITextField"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13DeviceManager14KTableViewCellC13setEmailFiled04textH005tableD0ySo11UITextFieldC_So07UITableD0CtF",
+            "mangledName": "$s13DeviceManager14KTableViewCellC13setEmailFiled04textH005tableD0ySo11UITextFieldC_So07UITableD0CtF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textFieldShouldReturn",
+            "printedName": "textFieldShouldReturn(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITextField",
+                "printedName": "UIKit.UITextField",
+                "usr": "c:objc(cs)UITextField"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textFieldShouldReturn:",
+            "mangledName": "$s13DeviceManager14KTableViewCellC21textFieldShouldReturnySbSo06UITextG0CF",
+            "moduleName": "DeviceManager",
+            "objc_name": "textFieldShouldReturn:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textFieldDidEndEditing",
+            "printedName": "textFieldDidEndEditing(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITextField",
+                "printedName": "UIKit.UITextField",
+                "usr": "c:objc(cs)UITextField"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textFieldDidEndEditing:",
+            "mangledName": "$s13DeviceManager14KTableViewCellC22textFieldDidEndEditingyySo06UITextG0CF",
+            "moduleName": "DeviceManager",
+            "objc_name": "textFieldDidEndEditing:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textFieldDidBeginEditing",
+            "printedName": "textFieldDidBeginEditing(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITextField",
+                "printedName": "UIKit.UITextField",
+                "usr": "c:objc(cs)UITextField"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textFieldDidBeginEditing:",
+            "mangledName": "$s13DeviceManager14KTableViewCellC24textFieldDidBeginEditingyySo06UITextG0CF",
+            "moduleName": "DeviceManager",
+            "objc_name": "textFieldDidBeginEditing:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textField",
+            "printedName": "textField(_:shouldChangeCharactersIn:replacementString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITextField",
+                "printedName": "UIKit.UITextField",
+                "usr": "c:objc(cs)UITextField"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_NSRange",
+                "printedName": "Foundation._NSRange",
+                "usr": "c:@S@_NSRange"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textField:shouldChangeCharactersInRange:replacementString:",
+            "mangledName": "$s13DeviceManager14KTableViewCellC9textField_24shouldChangeCharactersIn17replacementStringSbSo06UITextG0C_So8_NSRangeVSStF",
+            "moduleName": "DeviceManager",
+            "objc_name": "textField:shouldChangeCharactersInRange:replacementString:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -3242,30 +4764,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeviceManager",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SystemConfiguration.CaptiveNetwork",
-        "printedName": "SystemConfiguration.CaptiveNetwork",
-        "declKind": "Import",
-        "moduleName": "DeviceManager"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreTelephony",
-        "printedName": "CoreTelephony",
-        "declKind": "Import",
-        "moduleName": "DeviceManager"
-      },
-      {
         "kind": "TypeDecl",
         "name": "UIView",
         "printedName": "UIView",
@@ -3319,7 +4817,7 @@
           {
             "kind": "Function",
             "name": "setShadow",
-            "printedName": "setShadow(_:)",
+            "printedName": "setShadow(_:opacity:offset:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3332,11 +4830,25 @@
                 "printedName": "UIKit.UIColor",
                 "hasDefaultArg": true,
                 "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGSize"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So6UIViewC13DeviceManagerE9setShadowyySo7UIColorCF",
-            "mangledName": "$sSo6UIViewC13DeviceManagerE9setShadowyySo7UIColorCF",
+            "usr": "s:So6UIViewC13DeviceManagerE9setShadow_7opacity6offsetySo7UIColorC_SfSo6CGSizeVtF",
+            "mangledName": "$sSo6UIViewC13DeviceManagerE9setShadow_7opacity6offsetySo7UIColorC_SfSo6CGSizeVtF",
             "moduleName": "DeviceManager",
             "declAttributes": [
               "Preconcurrency",
@@ -3928,6 +5440,367 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "x",
+            "printedName": "x",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6UIViewC13DeviceManagerE1x14CoreFoundation7CGFloatVvp",
+            "mangledName": "$sSo6UIViewC13DeviceManagerE1x12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1x14CoreFoundation7CGFloatVvg",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1x12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1x14CoreFoundation7CGFloatVvs",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1x12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1x14CoreFoundation7CGFloatVvM",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1x12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "intro_iOS": "2.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "y",
+            "printedName": "y",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6UIViewC13DeviceManagerE1y14CoreFoundation7CGFloatVvp",
+            "mangledName": "$sSo6UIViewC13DeviceManagerE1y12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1y14CoreFoundation7CGFloatVvg",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1y12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1y14CoreFoundation7CGFloatVvs",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1y12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1y14CoreFoundation7CGFloatVvM",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1y12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "intro_iOS": "2.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "w",
+            "printedName": "w",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6UIViewC13DeviceManagerE1w14CoreFoundation7CGFloatVvp",
+            "mangledName": "$sSo6UIViewC13DeviceManagerE1w12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1w14CoreFoundation7CGFloatVvg",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1w12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1w14CoreFoundation7CGFloatVvs",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1w12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1w14CoreFoundation7CGFloatVvM",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1w12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "intro_iOS": "2.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "h",
+            "printedName": "h",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6UIViewC13DeviceManagerE1h14CoreFoundation7CGFloatVvp",
+            "mangledName": "$sSo6UIViewC13DeviceManagerE1h12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1h14CoreFoundation7CGFloatVvg",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1h12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1h14CoreFoundation7CGFloatVvs",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1h12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC13DeviceManagerE1h14CoreFoundation7CGFloatVvM",
+                "mangledName": "$sSo6UIViewC13DeviceManagerE1h12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "intro_iOS": "2.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -5154,6 +7027,275 @@
         "isExternal": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIButton",
+        "printedName": "UIButton",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setAfterTitle",
+            "printedName": "setAfterTitle(after:color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8UIButtonC13DeviceManagerE13setAfterTitle5after5colorySS_So7UIColorCtF",
+            "mangledName": "$sSo8UIButtonC13DeviceManagerE13setAfterTitle5after5colorySS_So7UIColorCtF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setFrontTitle",
+            "printedName": "setFrontTitle(front:color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8UIButtonC13DeviceManagerE13setFrontTitle5front5colorySS_So7UIColorCtF",
+            "mangledName": "$sSo8UIButtonC13DeviceManagerE13setFrontTitle5front5colorySS_So7UIColorCtF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIButtonC13DeviceManagerE4textSSvp",
+            "mangledName": "$sSo8UIButtonC13DeviceManagerE4textSSvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIButtonC13DeviceManagerE4textSSvg",
+                "mangledName": "$sSo8UIButtonC13DeviceManagerE4textSSvg",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIButtonC13DeviceManagerE4textSSvs",
+                "mangledName": "$sSo8UIButtonC13DeviceManagerE4textSSvs",
+                "moduleName": "DeviceManager",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIButtonC13DeviceManagerE4textSSvM",
+                "mangledName": "$sSo8UIButtonC13DeviceManagerE4textSSvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "intro_iOS": "2.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIButton",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIButton",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIControl",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIControl",
           "UIKit.UIView",
           "UIKit.UIResponder",
           "ObjectiveC.NSObject"
@@ -8155,445 +10297,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UITextField",
-        "printedName": "UITextField",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "placeHolderColor",
-            "printedName": "placeHolderColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(py)placeHolderColor",
-            "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvp",
-            "moduleName": "DeviceManager",
-            "declAttributes": [
-              "Dynamic",
-              "Preconcurrency",
-              "Custom",
-              "IBInspectable",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(im)placeHolderColor",
-                "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvg",
-                "moduleName": "DeviceManager",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(im)setPlaceHolderColor:",
-                "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvs",
-                "moduleName": "DeviceManager",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UITextField",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UITextField",
-        "declAttributes": [
-          "Preconcurrency",
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIControl",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIControl",
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIViewController",
-        "printedName": "UIViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "popGestureClose",
-            "printedName": "popGestureClose()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So16UIViewControllerC13DeviceManagerE15popGestureCloseyyF",
-            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE15popGestureCloseyyF",
-            "moduleName": "DeviceManager",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "popGestureOpen",
-            "printedName": "popGestureOpen()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So16UIViewControllerC13DeviceManagerE14popGestureOpenyyF",
-            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE14popGestureOpenyyF",
-            "moduleName": "DeviceManager",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeSelf",
-            "printedName": "removeSelf()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So16UIViewControllerC13DeviceManagerE10removeSelfyyF",
-            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE10removeSelfyyF",
-            "moduleName": "DeviceManager",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "topVC",
-            "printedName": "topVC",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So16UIViewControllerC13DeviceManagerE5topVCABSgvp",
-            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE5topVCABSgvp",
-            "moduleName": "DeviceManager",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIViewController?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIViewController",
-                        "printedName": "UIKit.UIViewController",
-                        "usr": "c:objc(cs)UIViewController"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So16UIViewControllerC13DeviceManagerE5topVCABSgvg",
-                "mangledName": "$sSo16UIViewControllerC13DeviceManagerE5topVCABSgvg",
-                "moduleName": "DeviceManager",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIViewController",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIViewController",
-        "declAttributes": [
-          "Preconcurrency",
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIResponder",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "UIDevice",
         "printedName": "UIDevice",
         "children": [
@@ -8846,8 +10549,8 @@
           },
           {
             "kind": "Var",
-            "name": "deviceModelName",
-            "printedName": "deviceModelName",
+            "name": "deviceIdentifier",
+            "printedName": "deviceIdentifier",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8857,8 +10560,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:So8UIDeviceC13DeviceManagerE15deviceModelNameSSvpZ",
-            "mangledName": "$sSo8UIDeviceC13DeviceManagerE15deviceModelNameSSvpZ",
+            "usr": "s:So8UIDeviceC13DeviceManagerE16deviceIdentifierSSvpZ",
+            "mangledName": "$sSo8UIDeviceC13DeviceManagerE16deviceIdentifierSSvpZ",
             "moduleName": "DeviceManager",
             "static": true,
             "declAttributes": [
@@ -8882,8 +10585,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So8UIDeviceC13DeviceManagerE15deviceModelNameSSvgZ",
-                "mangledName": "$sSo8UIDeviceC13DeviceManagerE15deviceModelNameSSvgZ",
+                "usr": "s:So8UIDeviceC13DeviceManagerE16deviceIdentifierSSvgZ",
+                "mangledName": "$sSo8UIDeviceC13DeviceManagerE16deviceIdentifierSSvgZ",
                 "moduleName": "DeviceManager",
                 "static": true,
                 "declAttributes": [
@@ -10171,6 +11874,687 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UITextField",
+        "printedName": "UITextField",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "placeHolderColor",
+            "printedName": "placeHolderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(py)placeHolderColor",
+            "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Dynamic",
+              "Preconcurrency",
+              "Custom",
+              "IBInspectable",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(im)placeHolderColor",
+                "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvg",
+                "moduleName": "DeviceManager",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(im)setPlaceHolderColor:",
+                "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvs",
+                "moduleName": "DeviceManager",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UITextField",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UITextField",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIControl",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIControl",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UITableViewCell",
+        "printedName": "UITableViewCell",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "indexPath",
+            "printedName": "indexPath(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.IndexPath?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexPath",
+                    "printedName": "Foundation.IndexPath",
+                    "usr": "s:10Foundation9IndexPathV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITableView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITableView",
+                    "printedName": "UIKit.UITableView",
+                    "usr": "c:objc(cs)UITableView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So15UITableViewCellC13DeviceManagerE9indexPath2in10Foundation05IndexG0VSgSo0aB0CSg_tF",
+            "mangledName": "$sSo15UITableViewCellC13DeviceManagerE9indexPath2in10Foundation05IndexG0VSgSo0aB0CSg_tF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "findTableView",
+            "printedName": "findTableView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITableView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITableView",
+                    "printedName": "UIKit.UITableView",
+                    "usr": "c:objc(cs)UITableView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So15UITableViewCellC13DeviceManagerE09findTableB0So0aB0CSgyF",
+            "mangledName": "$sSo15UITableViewCellC13DeviceManagerE09findTableB0So0aB0CSgyF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollNext",
+            "printedName": "scrollNext()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So15UITableViewCellC13DeviceManagerE10scrollNextyyF",
+            "mangledName": "$sSo15UITableViewCellC13DeviceManagerE10scrollNextyyF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollTop",
+            "printedName": "scrollTop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So15UITableViewCellC13DeviceManagerE9scrollTopyyF",
+            "mangledName": "$sSo15UITableViewCellC13DeviceManagerE9scrollTopyyF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UITableViewCell",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UITableViewCell",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIViewController",
+        "printedName": "UIViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "popGestureClose",
+            "printedName": "popGestureClose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC13DeviceManagerE15popGestureCloseyyF",
+            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE15popGestureCloseyyF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popGestureOpen",
+            "printedName": "popGestureOpen()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC13DeviceManagerE14popGestureOpenyyF",
+            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE14popGestureOpenyyF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeSelf",
+            "printedName": "removeSelf()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC13DeviceManagerE10removeSelfyyF",
+            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE10removeSelfyyF",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "topVC",
+            "printedName": "topVC",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So16UIViewControllerC13DeviceManagerE5topVCABSgvpZ",
+            "mangledName": "$sSo16UIViewControllerC13DeviceManagerE5topVCABSgvpZ",
+            "moduleName": "DeviceManager",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So16UIViewControllerC13DeviceManagerE5topVCABSgvgZ",
+                "mangledName": "$sSo16UIViewControllerC13DeviceManagerE5topVCABSgvgZ",
+                "moduleName": "DeviceManager",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIViewController",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIViewController",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -10199,484 +12583,505 @@
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 564,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "Array",
-      "offset": 1043,
+      "offset": 1068,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 1285,
+      "offset": 1310,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 1293,
+      "offset": 1318,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 1326,
+      "offset": 1351,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 1334,
+      "offset": 1359,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 4878,
+      "offset": 4903,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 4890,
+      "offset": 4915,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5017,
+      "offset": 5042,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5048,
+      "offset": 5073,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5184,
+      "offset": 5209,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5202,
+      "offset": 5227,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5208,
+      "offset": 5233,
       "length": 2,
       "value": "-3"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5226,
+      "offset": 5251,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5271,
+      "offset": 5296,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5276,
+      "offset": 5301,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 5424,
+      "offset": 5449,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 5553,
+      "offset": 5578,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 5561,
+      "offset": 5586,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 5601,
+      "offset": 5626,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 5840,
+      "offset": 5865,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 6039,
+      "offset": 6064,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 6246,
+      "offset": 6271,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 6458,
+      "offset": 6483,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 6677,
+      "offset": 6702,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 6709,
+      "offset": 6734,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 6895,
+      "offset": 6920,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 6927,
+      "offset": 6952,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 7528,
+      "offset": 8453,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 9208,
+      "offset": 10133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 13002,
+      "offset": 13927,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 13021,
+      "offset": 13946,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "kind": "StringLiteral",
+      "offset": 15547,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
+      "kind": "StringLiteral",
+      "offset": 16051,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 16090,
+      "offset": 18204,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 16136,
+      "offset": 18250,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 16152,
+      "offset": 18266,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 16167,
+      "offset": 18281,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 16246,
+      "offset": 18360,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18733,
+      "offset": 20847,
       "length": 10,
       "value": "\"$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18771,
+      "offset": 20885,
       "length": 10,
       "value": "\"€\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18813,
+      "offset": 20927,
       "length": 10,
       "value": "\"£\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18851,
+      "offset": 20965,
       "length": 10,
       "value": "\"¥\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18891,
+      "offset": 21005,
       "length": 10,
       "value": "\"₹\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18932,
+      "offset": 21046,
       "length": 10,
       "value": "\"₽\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 18971,
+      "offset": 21085,
       "length": 10,
       "value": "\"₩\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19012,
+      "offset": 21126,
       "length": 5,
       "value": "\"CHF\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19049,
+      "offset": 21163,
       "length": 4,
       "value": "\"R$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19076,
+      "offset": 21190,
       "length": 3,
       "value": "\"R\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19113,
+      "offset": 21227,
       "length": 5,
       "value": "\"NT$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19141,
+      "offset": 21255,
       "length": 10,
       "value": "\"฿\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19182,
+      "offset": 21296,
       "length": 10,
       "value": "\"₦\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19222,
+      "offset": 21336,
       "length": 10,
       "value": "\"₺\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19264,
+      "offset": 21378,
       "length": 5,
       "value": "\"Kč\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19301,
+      "offset": 21415,
       "length": 4,
       "value": "\"Ft\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19335,
+      "offset": 21449,
       "length": 5,
       "value": "\"zł\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19371,
+      "offset": 21485,
       "length": 4,
       "value": "\"kr\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19411,
+      "offset": 21525,
       "length": 4,
       "value": "\"kr\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19440,
+      "offset": 21554,
       "length": 26,
       "value": "\"د.إ\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19499,
+      "offset": 21613,
       "length": 10,
       "value": "\"﷼\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19541,
+      "offset": 21655,
       "length": 10,
       "value": "\"₪\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19587,
+      "offset": 21701,
       "length": 26,
       "value": "\"ج.م\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19655,
+      "offset": 21769,
       "length": 10,
       "value": "\"₨\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19695,
+      "offset": 21809,
       "length": 10,
       "value": "\"৳\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19737,
+      "offset": 21851,
       "length": 4,
       "value": "\"Rp\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19778,
+      "offset": 21892,
       "length": 10,
       "value": "\"₱\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19830,
+      "offset": 21944,
       "length": 5,
       "value": "\"₪\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19873,
+      "offset": 21987,
       "length": 4,
       "value": "\"kn\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19918,
+      "offset": 22032,
       "length": 4,
       "value": "\"RM\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19955,
+      "offset": 22069,
       "length": 5,
       "value": "\"฿\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 19997,
+      "offset": 22111,
       "length": 5,
       "value": "\"₺\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/UIKKit.swift",
       "kind": "Dictionary",
-      "offset": 20082,
+      "offset": 22196,
       "length": 1262,
       "value": "[(\"United States\", (\"USD\", \"$\")), (\"Eurozone\", (\"EUR\", \"€\")), (\"United Kingdom\", (\"GBP\", \"£\")), (\"Japan\", (\"JPY\", \"¥\")), (\"China\", (\"CNY\", \"¥\")), (\"India\", (\"INR\", \"₹\")), (\"Russia\", (\"RUB\", \"₽\")), (\"South Korea\", (\"KRW\", \"₩\")), (\"Switzerland\", (\"CHF\", \"CHF\")), (\"Brazil\", (\"BRL\", \"R$\")), (\"South Africa\", (\"ZAR\", \"R\")), (\"Taiwan\", (\"TWD\", \"NT$\")), (\"Thailand\", (\"THB\", \"฿\")), (\"Mexico\", (\"MXN\", \"$\")), (\"Nigeria\", (\"NGN\", \"₦\")), (\"Turkey\", (\"TRY\", \"₺\")), (\"Czech Republic\", (\"CZK\", \"Kč\")), (\"Hungary\", (\"HUF\", \"Ft\")), (\"Poland\", (\"PLN\", \"zł\")), (\"Sweden\", (\"SEK\", \"kr\")), (\"Norway\", (\"NOK\", \"kr\")), (\"United Arab Emirates\", (\"AED\", \"د.إ\")), (\"Saudi Arabia\", (\"SAR\", \"﷼\")), (\"Iran\", (\"IRR\", \"﷼\")), (\"Israel\", (\"ILS\", \"₪\")), (\"Egypt\", (\"EGP\", \"ج.م\")), (\"Pakistan\", (\"PKR\", \"₨\")), (\"Bangladesh\", (\"BDT\", \"৳\")), (\"Indonesia\", (\"IDR\", \"Rp\")), (\"Philippines\", (\"PHP\", \"₱\")), (\"Denmark\", (\"DKK\", \"kr\")), (\"Argentina\", (\"ARS\", \"$\")), (\"Croatia\", (\"HRK\", \"kn\")), (\"Singapore\", (\"SGD\", \"$\")), (\"Malaysia\", (\"MYR\", \"RM\"))]"
     },
@@ -10791,6 +13196,69 @@
       "offset": 486,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 495,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 515,
+      "length": 41,
+      "value": "\"Please enable camera access in Settings\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1470,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1490,
+      "length": 77,
+      "value": "\"Allow location access to help verify your details and protect your account.\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1588,
+      "length": 4,
+      "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/KToastView.swift",
@@ -10913,24 +13381,94 @@
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 329,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1907,
+      "offset": 311,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1928,
+      "offset": 541,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2155,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2176,
       "length": 4,
       "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2600,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2618,
+      "length": 41,
+      "value": "\"Please enable camera access in Settings\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2678,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2949,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2967,
+      "length": 77,
+      "value": "\"Allow location access to help verify your details and protect your account.\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 3063,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/DeviceInfoHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/DeviceInfoHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 288,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/DeviceInfoHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1515,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/HomePopUpHelper.swift",
@@ -11099,6 +13637,118 @@
       "offset": 1652,
       "length": 3,
       "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 227,
+      "length": 2,
+      "value": "72"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 273,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 19,
+      "value": "\"PingFangSC-Medium\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 557,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 608,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "Array",
+      "offset": 655,
+      "length": 59,
+      "value": "[\"@gmail.com\", \"@icloud.com\", \"@yahoo.com\", \"@outlook.com\"]"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 750,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 808,
+      "length": 9,
+      "value": "\"#EEF0F4\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 925,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1152,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1199,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1228,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 1373,
+      "length": 9,
+      "value": "\"#0B2C04\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1393,
+      "length": 4,
+      "value": "0.15"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KUIViewController.swift",

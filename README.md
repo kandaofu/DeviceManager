@@ -6,18 +6,22 @@
 ##** DeviceHelper
 
   - getEncryptInfo: Get encrypted device information
+  - getDeviceParams: Get unencrypted device information dictionary
 
   - setHomePop: Set the home pop-up box
 
-  - loadsCustom: Set the global customer service floating button
+  - setCustom: Set the global customer service floating button
   - customShow: Show the customer service button
   - customHide: Hide the customer service button
   
   - getImage: Pull up the album camera to get the picture
   - getContact: Get the contact name and phone number selected by the user
   
-  - openSetting: Open the system settings page
-  - shareWithAppActivities: Share file resources to external
+  - setSettingAlert: Open the system settings page
+  - setShareAppActivities: Share file resources to external
+  
+  - checkCamera: Request camera permission, callback if successful, jump to pop-up window if failed
+  - checkLocation: Request location permission, callback if successful, jump to pop-up window if failed
 
 
 ##** LocationManager
@@ -78,3 +82,23 @@ Alternatively, you can directly call backAction() under the back() method to imp
  - hideLoading
  
  
+ ##** KTableViewCell
+ 
+ *\ Enable custom mailbox completion popup view
+ 
+  - setEmailFiled: 
+    - cellEmailOffsetX:CGFloat = 72
+    - emailButtonHeight:CGFloat = 48
+    - emailButtonLeftMargin:CGFloat = 14
+    - emailButtonAttrColor:UIColor?
+    - emailButtonTextColor:UIColor = .black
+    - emailButtonFirstColor:UIColor = .blue
+    - emailButtonFont:UIFont = UIFont(name: "PingFangSC-Medium", size: 13)!
+    - emailButtontitleLeft:CGFloat = 12
+    - emailFootterArray:[String] = ["@gmail.com", "@icloud.com", "@yahoo.com", "@outlook.com"]
+    - emailHasLine:Bool = true
+    - emailLineColor:UIColor = UIColor(hex: "#EEF0F4")
+    - didEndFill:(_ text:String) -> Void = {_  in}
+    
+
+
