@@ -58,12 +58,7 @@ extension Swift.String {
   public func highlightedNumbers(withColor color: UIKit.UIColor) -> Foundation.NSAttributedString
   public func setArribute(targetText: Swift.String, color: UIKit.UIColor?, font: UIKit.UIFont?, underline: Swift.Bool = false) -> Foundation.NSAttributedString
   public func isEqualTo(_ string: Swift.String) -> Swift.Bool
-  public func toDict2() -> [Swift.String : Any]?
   public func toDict() -> [Swift.String : Any]?
-  public func getFileAsData() -> Foundation.Data?
-  public func readFileAsDict() -> [Swift.String : Any]?
-  public func readFileAsArray() -> [Any]?
-  public func readFileAsJSON() -> Swift.String?
 }
 extension UIKit.UILabel {
   @_Concurrency.MainActor @preconcurrency public func setPrivacy(_ lineColor: UIKit.UIColor, _ hasLine: Swift.Bool = false, _ type: Swift.Int = 0)
@@ -136,9 +131,9 @@ public enum KCornerMask {
 public struct CurrencySymbol {
 }
 @objc @_inheritsConvenienceInitializers public class KToast : ObjectiveC.NSObject {
-  public func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 0.2)
-  public func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .gray, backgroundColor: UIKit.UIColor = .clear)
-  public func hideLoading()
+  public static func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 0.2)
+  public static func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .gray, backgroundColor: UIKit.UIColor = .clear)
+  public static func hideLoading()
   @objc override dynamic public init()
   @objc deinit
 }
