@@ -13009,8 +13009,15 @@
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
+      "kind": "FloatLiteral",
+      "offset": 1260,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1234,
+      "offset": 1308,
       "length": 2,
       "value": "12"
     },
