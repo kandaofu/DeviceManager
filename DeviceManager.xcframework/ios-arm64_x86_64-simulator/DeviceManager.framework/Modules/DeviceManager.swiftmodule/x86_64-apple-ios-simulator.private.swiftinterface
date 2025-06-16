@@ -131,8 +131,8 @@ public enum KCornerMask {
 public struct CurrencySymbol {
 }
 @objc @_inheritsConvenienceInitializers public class KToast : ObjectiveC.NSObject {
-  public static func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 0.2)
-  public static func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .gray, backgroundColor: UIKit.UIColor = .clear)
+  public static func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 1.0)
+  public static func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .clear)
   public static func hideLoading()
   @objc override dynamic public init()
   @objc deinit

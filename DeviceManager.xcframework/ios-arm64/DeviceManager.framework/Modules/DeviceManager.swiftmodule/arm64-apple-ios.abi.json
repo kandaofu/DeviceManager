@@ -12935,7 +12935,7 @@
       "kind": "FloatLiteral",
       "offset": 369,
       "length": 3,
-      "value": "0.2"
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
@@ -12947,44 +12947,30 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 711,
+      "offset": 690,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 925,
+      "offset": 904,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 989,
+      "offset": 968,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1129,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1134,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1157,
-      "length": 3,
-      "value": "100"
+      "offset": 1077,
+      "length": 2,
+      "value": "80"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
@@ -12996,28 +12982,21 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1172,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1185,
-      "length": 3,
-      "value": "100"
+      "offset": 1196,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1260,
+      "offset": 1306,
       "length": 3,
-      "value": "0.8"
+      "value": "0.6"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1308,
+      "offset": 1354,
       "length": 2,
       "value": "12"
     },
@@ -13108,7 +13087,7 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/KToastView.swift",
       "kind": "FloatLiteral",
-      "offset": 389,
+      "offset": 190,
       "length": 3,
       "value": "1.5"
     },
