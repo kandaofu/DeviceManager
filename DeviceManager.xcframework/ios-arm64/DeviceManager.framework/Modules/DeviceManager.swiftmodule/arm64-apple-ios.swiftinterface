@@ -241,18 +241,6 @@ public protocol CountdownDelegate : AnyObject {
   public func stop()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KTextField : UIKit.UITextField {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func deleteBackward()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension UIKit.UITextField {
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var placeHolderColor: UIKit.UIColor? {
-    @objc get
-    @objc set
-  }
-}
 @objc @_inheritsConvenienceInitializers public class LocationManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
   public static var shared: DeviceManager.LocationManager
   public var latitude: Swift.Double
@@ -281,7 +269,7 @@ extension UIKit.UITextField {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency public var cellEmailOffsetX: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonHeight: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonLeftMargin: CoreFoundation.CGFloat
@@ -294,12 +282,12 @@ extension UIKit.UITextField {
   @_Concurrency.MainActor @preconcurrency public var emailHasLine: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var emailLineColor: UIKit.UIColor
   @_Concurrency.MainActor @preconcurrency public var didEndFill: (Swift.String) -> Swift.Void
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor @preconcurrency public func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
-  @_Concurrency.MainActor @preconcurrency @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
-  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
-  @_Concurrency.MainActor @preconcurrency @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency open func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -311,11 +299,11 @@ extension UIKit.UITableViewCell {
   @_Concurrency.MainActor @preconcurrency public func scrollNext()
   @_Concurrency.MainActor @preconcurrency public func scrollTop()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KUIViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KUIViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public var navigationPopOpen: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func back()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open func back()
   @_Concurrency.MainActor @preconcurrency public func backAction()
   @_Concurrency.MainActor @preconcurrency public func fullPresent(_ targetFile: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency public func dealWebMessage(web: WebKit.WKWebView, wkMessage: WebKit.WKScriptMessage, dict: [Swift.String : Any], webScripList: [Swift.String])

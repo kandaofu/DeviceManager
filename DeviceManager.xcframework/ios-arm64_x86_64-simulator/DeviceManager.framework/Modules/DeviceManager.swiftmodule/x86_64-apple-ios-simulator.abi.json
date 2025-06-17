@@ -1033,225 +1033,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "KTextField",
-        "printedName": "KTextField",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "deleteBackward",
-            "printedName": "deleteBackward()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DeviceManager@objc(cs)KTextField(im)deleteBackward",
-            "mangledName": "$s13DeviceManager10KTextFieldC14deleteBackwardyyF",
-            "moduleName": "DeviceManager",
-            "overriding": true,
-            "objc_name": "deleteBackward",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KTextField",
-                "printedName": "DeviceManager.KTextField",
-                "usr": "c:@M@DeviceManager@objc(cs)KTextField"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DeviceManager@objc(cs)KTextField(im)initWithFrame:",
-            "mangledName": "$s13DeviceManager10KTextFieldC5frameACSo6CGRectV_tcfc",
-            "moduleName": "DeviceManager",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithFrame:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "DeviceManager.KTextField?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KTextField",
-                    "printedName": "DeviceManager.KTextField",
-                    "usr": "c:@M@DeviceManager@objc(cs)KTextField"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DeviceManager@objc(cs)KTextField(im)initWithCoder:",
-            "mangledName": "$s13DeviceManager10KTextFieldC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "DeviceManager",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@DeviceManager@objc(cs)KTextField",
-        "mangledName": "$s13DeviceManager10KTextFieldC",
-        "moduleName": "DeviceManager",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UITextField",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UITextField",
-          "UIKit.UIControl",
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DeviceManager",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
@@ -3827,6 +3608,7 @@
             "mangledName": "$s13DeviceManager14KTableViewCellC12awakeFromNibyyF",
             "moduleName": "DeviceManager",
             "overriding": true,
+            "isOpen": true,
             "objc_name": "awakeFromNib",
             "declAttributes": [
               "Dynamic",
@@ -3865,6 +3647,7 @@
             "usr": "s:13DeviceManager14KTableViewCellC13setEmailFiled04textH005tableD0ySo11UITextFieldC_So07UITableD0CtF",
             "mangledName": "$s13DeviceManager14KTableViewCellC13setEmailFiled04textH005tableD0ySo11UITextFieldC_So07UITableD0CtF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -3894,6 +3677,7 @@
             "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textFieldShouldReturn:",
             "mangledName": "$s13DeviceManager14KTableViewCellC21textFieldShouldReturnySbSo06UITextG0CF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "objc_name": "textFieldShouldReturn:",
             "declAttributes": [
               "ObjC",
@@ -3924,6 +3708,7 @@
             "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textFieldDidEndEditing:",
             "mangledName": "$s13DeviceManager14KTableViewCellC22textFieldDidEndEditingyySo06UITextG0CF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "objc_name": "textFieldDidEndEditing:",
             "declAttributes": [
               "ObjC",
@@ -3954,6 +3739,7 @@
             "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textFieldDidBeginEditing:",
             "mangledName": "$s13DeviceManager14KTableViewCellC24textFieldDidBeginEditingyySo06UITextG0CF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "objc_name": "textFieldDidBeginEditing:",
             "declAttributes": [
               "ObjC",
@@ -3997,6 +3783,7 @@
             "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell(im)textField:shouldChangeCharactersInRange:replacementString:",
             "mangledName": "$s13DeviceManager14KTableViewCellC9textField_24shouldChangeCharactersIn17replacementStringSbSo06UITextG0C_So8_NSRangeVSStF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "objc_name": "textField:shouldChangeCharactersInRange:replacementString:",
             "declAttributes": [
               "ObjC",
@@ -4103,6 +3890,7 @@
         "usr": "c:@M@DeviceManager@objc(cs)KTableViewCell",
         "mangledName": "$s13DeviceManager14KTableViewCellC",
         "moduleName": "DeviceManager",
+        "isOpen": true,
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -4337,6 +4125,7 @@
             "mangledName": "$s13DeviceManager17KUIViewControllerC11viewDidLoadyyF",
             "moduleName": "DeviceManager",
             "overriding": true,
+            "isOpen": true,
             "objc_name": "viewDidLoad",
             "declAttributes": [
               "Dynamic",
@@ -4370,6 +4159,7 @@
             "usr": "c:@M@DeviceManager@objc(cs)KUIViewController(im)gestureRecognizerShouldBegin:",
             "mangledName": "$s13DeviceManager17KUIViewControllerC28gestureRecognizerShouldBeginySbSo09UIGestureF0CF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "objc_name": "gestureRecognizerShouldBegin:",
             "declAttributes": [
               "ObjC",
@@ -4394,6 +4184,7 @@
             "usr": "s:13DeviceManager17KUIViewControllerC4backyyF",
             "mangledName": "$s13DeviceManager17KUIViewControllerC4backyyF",
             "moduleName": "DeviceManager",
+            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -4676,6 +4467,7 @@
         "usr": "c:@M@DeviceManager@objc(cs)KUIViewController",
         "mangledName": "$s13DeviceManager17KUIViewControllerC",
         "moduleName": "DeviceManager",
+        "isOpen": true,
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -11715,218 +11507,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UITextField",
-        "printedName": "UITextField",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "placeHolderColor",
-            "printedName": "placeHolderColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(py)placeHolderColor",
-            "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvp",
-            "moduleName": "DeviceManager",
-            "declAttributes": [
-              "Dynamic",
-              "Preconcurrency",
-              "Custom",
-              "IBInspectable",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(im)placeHolderColor",
-                "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvg",
-                "moduleName": "DeviceManager",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@DeviceManager@@objc(cs)UITextField(im)setPlaceHolderColor:",
-                "mangledName": "$sSo11UITextFieldC13DeviceManagerE16placeHolderColorSo7UIColorCSgvs",
-                "moduleName": "DeviceManager",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UITextField",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UITextField",
-        "declAttributes": [
-          "Preconcurrency",
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIControl",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIControl",
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "UITableViewCell",
         "printedName": "UITableViewCell",
         "children": [
@@ -12940,63 +12520,63 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 544,
+      "offset": 566,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 690,
+      "offset": 712,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 904,
+      "offset": 926,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 968,
+      "offset": 990,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1077,
+      "offset": 1099,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1162,
+      "offset": 1184,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1196,
+      "offset": 1218,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1306,
+      "offset": 1328,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1354,
+      "offset": 1376,
       "length": 2,
       "value": "12"
     },
@@ -13465,119 +13045,119 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 227,
+      "offset": 225,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 273,
+      "offset": 271,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 323,
+      "offset": 321,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 530,
+      "offset": 528,
       "length": 19,
       "value": "\"PingFangSC-Medium\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 555,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 608,
+      "offset": 606,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "Array",
-      "offset": 655,
+      "offset": 653,
       "length": 59,
       "value": "[\"@gmail.com\", \"@icloud.com\", \"@yahoo.com\", \"@outlook.com\"]"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 750,
+      "offset": 748,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 806,
       "length": 9,
       "value": "\"#EEF0F4\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 925,
+      "offset": 923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1152,
+      "offset": 1150,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1199,
+      "offset": 1197,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1228,
+      "offset": 1226,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1323,
+      "offset": 1321,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
+      "offset": 1371,
       "length": 9,
       "value": "\"#0B2C04\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1393,
+      "offset": 1391,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 270,
+      "offset": 268,
       "length": 4,
       "value": "true"
     }
