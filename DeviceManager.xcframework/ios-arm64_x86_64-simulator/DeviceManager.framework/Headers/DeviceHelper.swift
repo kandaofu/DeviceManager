@@ -18,12 +18,6 @@ public class DeviceHelper: NSObject {
         let info = DeviceInfoHelper.shared.setEncryptInfo(iv: iv,ia: ia, key: key)
         return info
     }
-
-    /// get device params
-    public func getDeviceParams(withIV iv:String,ia:String="") -> [String:Any] {
-        let params = DeviceInfoHelper.shared.getDeviceInfo(iv: iv, ia: ia)
-        return params
-    }
     
     /// set and show home pop up picture
     public func setHomePop(withImageView popImage:UIImageView,buttonText:String,didSelect:@escaping(()->Void)){
@@ -66,10 +60,6 @@ public class DeviceHelper: NSObject {
         KManagerHelper.openSetting(vc: vc, title: title,message: message,buttonText: buttonText)
     }
     
-    /// share source with applicationActivities
-    func setShareAppActivities(vc:UIViewController,sourceView:UIView,file: Any) {
-        KManagerHelper.shareWithAppActivities(vc: vc, sourceView: sourceView, file: file)
-    }
 
     /// check Camera authorizationStatus
     public func checkCamera(title:String="",message:String="Please enable camera access in Settings",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
