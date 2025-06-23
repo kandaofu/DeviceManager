@@ -74,6 +74,9 @@ extension UIKit.UIButton {
     set
   }
 }
+extension UIKit.UIImage {
+  public func compress(to size: Swift.Int = 2) -> Foundation.Data?
+}
 extension CoreFoundation.CGFloat {
   public var intValue: Swift.Int {
     get

@@ -43,7 +43,7 @@ public class DeviceHelper: NSObject {
     
     /// getImage form picker
     public func getImage(inViewController vc:UIViewController,result:@escaping((_ image:UIImage)->Void)){
-        PhotoPickerHelper.present(from: vc) { image in
+        PhotoPickerHelper.shared.present(from: vc) { image in
             result(image)
         }
     }
