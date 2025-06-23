@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DeviceHelper.swift</key>
 		<data>
-		Zkw6HkmALpJ1+7qGm2ED8shbnBI=
+		TIi8c4Bk5kXbgff+MlppQJHkWZc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		0fGsI7oM7FePkTypLZf+HaniRM8=
+		9QSKi8BQdQ+vNawmr5rylM5fFZU=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		cj8j/nnJpYu7MMNmoJZNGCf0YhQ=
+		QaW8IlG3n40DeBGTgQ1B/6UZ3Ac=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		cj8j/nnJpYu7MMNmoJZNGCf0YhQ=
+		QaW8IlG3n40DeBGTgQ1B/6UZ3Ac=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZCmwapjue+p4mbbU2o09W1z/KSo=
+		qU+YROk/QZrIUPX4IgeGjFETCZg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,21 +39,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHddQkiehV1Tw5btPFrWWyJ1FcFsyvotm3w5D55NUdg=
+			+kj9Jba4wQM42hXIljf9LM3inYlBzu+MbrVLmSLBwCQ=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JoO3CAeLUwLikiudXLc8tpgJONYaXXmPSZK289oqP9w=
+			T1Igx1C9YeW1SnhMcoZBMSIvm8uys4gZGWihzKj5fi4=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/IR6T4DfIQll7OqZmUAH0eoeH/6Pgwr1N9k01PwksyU=
+			JHefz+NncLcrXstwylBvEwwKgTRFatB3Jm93eU3AP5A=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -67,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/IR6T4DfIQll7OqZmUAH0eoeH/6Pgwr1N9k01PwksyU=
+			JHefz+NncLcrXstwylBvEwwKgTRFatB3Jm93eU3AP5A=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lw81yeM+OV4WZb5VnvnvgirJjqsSJn69E4XdyPEicRQ=
+			u0iaHKr4HuhBprBucpYWhnwCLwWIlxpl9yH7bqvhuGk=
 			</data>
 		</dict>
 	</dict>

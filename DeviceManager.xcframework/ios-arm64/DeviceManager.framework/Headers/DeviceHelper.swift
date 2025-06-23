@@ -50,7 +50,7 @@ public class DeviceHelper: NSObject {
     
     /// getContactinfo fullName phoneNumber
     public func getContact(inViewController vc:UIViewController,result:@escaping((_ fullName:String?,_ phoneNumber:String?)->Void)){
-        ContactHelper.present(from: vc) { fullName, phoneNumber in
+        ContactHelper.shared.present(from: vc) { fullName, phoneNumber in
             result(fullName,phoneNumber)
         }
     }

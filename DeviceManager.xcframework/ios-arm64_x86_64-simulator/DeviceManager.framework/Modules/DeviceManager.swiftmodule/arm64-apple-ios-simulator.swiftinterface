@@ -270,6 +270,7 @@ public protocol CountdownDelegate : AnyObject {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency public var emailViewCorner: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var cellEmailOffsetX: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonHeight: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonLeftMargin: CoreFoundation.CGFloat

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DeviceHelper.swift</key>
 		<data>
-		Zkw6HkmALpJ1+7qGm2ED8shbnBI=
+		TIi8c4Bk5kXbgff+MlppQJHkWZc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0fGsI7oM7FePkTypLZf+HaniRM8=
+		9QSKi8BQdQ+vNawmr5rylM5fFZU=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5bTIEQD4yYf3HXBVTW+M5dgrYfY=
+		QpCEoQaPoKiPekxzYr5gbz43aas=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5bTIEQD4yYf3HXBVTW+M5dgrYfY=
+		QpCEoQaPoKiPekxzYr5gbz43aas=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FrcIaUVRp+2c+HN/kQBH6m/qcWs=
+		BSHg4cMZqCNOW2QqVh/gPqF/th0=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0fGsI7oM7FePkTypLZf+HaniRM8=
+		9QSKi8BQdQ+vNawmr5rylM5fFZU=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HLlQxuB/SB6i1brh03RzyQvZCOg=
+		/HmodLcX1DKJgqFcI9LgzPwI0WY=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HLlQxuB/SB6i1brh03RzyQvZCOg=
+		/HmodLcX1DKJgqFcI9LgzPwI0WY=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XoL5A4ZombYa7MZGuQEqoTG5Lkc=
+		N8NxIYivaMDXXakx+SZmXHf9WLY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,21 +59,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHddQkiehV1Tw5btPFrWWyJ1FcFsyvotm3w5D55NUdg=
+			+kj9Jba4wQM42hXIljf9LM3inYlBzu+MbrVLmSLBwCQ=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JoO3CAeLUwLikiudXLc8tpgJONYaXXmPSZK289oqP9w=
+			T1Igx1C9YeW1SnhMcoZBMSIvm8uys4gZGWihzKj5fi4=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ExU0QURhRp3ypQ+7QvKdLU5d7NlOgOqv+5iJm+LJNmI=
+			+cRacXeoRbfb4+WYpSdDAuGf5L5GPwQDDmnZVnxPL+c=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -87,28 +87,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ExU0QURhRp3ypQ+7QvKdLU5d7NlOgOqv+5iJm+LJNmI=
+			+cRacXeoRbfb4+WYpSdDAuGf5L5GPwQDDmnZVnxPL+c=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NtedehuL50h25tGuyo9wRc2aId/rJLhqH0+qZOfPJos=
+			QsDzIDFjgEN4UKk+CkB318zeEwIkzMpxaqhDixMYqdE=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JoO3CAeLUwLikiudXLc8tpgJONYaXXmPSZK289oqP9w=
+			T1Igx1C9YeW1SnhMcoZBMSIvm8uys4gZGWihzKj5fi4=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0vj+PCUR/Nn7/jyAlazN7qiveEu8BGWLQrEqzrpVzxg=
+			jIhgbFidBVr/RtXEkMHw7o2WWLMpaj8Tdi9BwxA8EmI=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -122,14 +122,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0vj+PCUR/Nn7/jyAlazN7qiveEu8BGWLQrEqzrpVzxg=
+			jIhgbFidBVr/RtXEkMHw7o2WWLMpaj8Tdi9BwxA8EmI=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W0SosTK9nFbPwHLDxMyel/vOcVbki2SuTd8JeXCC0wM=
+			gnsBYeWPz9xoP8edw+E78fRPgfVGk0dZwV+29Q+4SgA=
 			</data>
 		</dict>
 	</dict>

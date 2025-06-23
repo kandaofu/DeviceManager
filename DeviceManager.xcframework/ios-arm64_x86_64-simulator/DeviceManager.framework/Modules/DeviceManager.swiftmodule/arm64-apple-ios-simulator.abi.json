@@ -2426,6 +2426,94 @@
         "children": [
           {
             "kind": "Var",
+            "name": "emailViewCorner",
+            "printedName": "emailViewCorner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13DeviceManager14KTableViewCellC05emailD6Corner14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s13DeviceManager14KTableViewCellC05emailD6Corner12CoreGraphics7CGFloatVvp",
+            "moduleName": "DeviceManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC05emailD6Corner14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s13DeviceManager14KTableViewCellC05emailD6Corner12CoreGraphics7CGFloatVvg",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC05emailD6Corner14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s13DeviceManager14KTableViewCellC05emailD6Corner12CoreGraphics7CGFloatVvs",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13DeviceManager14KTableViewCellC05emailD6Corner14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s13DeviceManager14KTableViewCellC05emailD6Corner12CoreGraphics7CGFloatVvM",
+                "moduleName": "DeviceManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "cellEmailOffsetX",
             "printedName": "cellEmailOffsetX",
             "children": [
@@ -12737,63 +12825,63 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 317,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 353,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 515,
       "length": 41,
       "value": "\"Please enable camera access in Settings\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 1470,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 1490,
       "length": 77,
       "value": "\"Allow location access to help verify your details and protect your account.\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Private\/PrivacyHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/PrivacyHelper.swift",
       "kind": "StringLiteral",
       "offset": 1588,
       "length": 4,
@@ -12849,77 +12937,77 @@
       "value": "0.23"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 293,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 509,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "StringLiteral",
       "offset": 612,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/LocationManager.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/ChangerFile\/LocationManager.swift",
       "kind": "BooleanLiteral",
       "offset": 696,
       "length": 5,
@@ -12935,56 +13023,56 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1944,
+      "offset": 1951,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1965,
+      "offset": 1972,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2163,
+      "offset": 2170,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2181,
+      "offset": 2188,
       "length": 41,
       "value": "\"Please enable camera access in Settings\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2241,
+      "offset": 2248,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2512,
+      "offset": 2519,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2530,
+      "offset": 2537,
       "length": 77,
       "value": "\"Allow location access to help verify your details and protect your account.\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/DeviceHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 2633,
       "length": 4,
       "value": "\"OK\""
     },
@@ -13173,112 +13261,112 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 225,
+      "offset": 224,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 268,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 271,
+      "offset": 314,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 321,
+      "offset": 364,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 571,
       "length": 19,
       "value": "\"PingFangSC-Medium\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 555,
+      "offset": 598,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 606,
+      "offset": 649,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "Array",
-      "offset": 653,
+      "offset": 696,
       "length": 59,
       "value": "[\"@gmail.com\", \"@icloud.com\", \"@yahoo.com\", \"@outlook.com\"]"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 748,
+      "offset": 791,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 806,
+      "offset": 849,
       "length": 9,
       "value": "\"#EEF0F4\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 962,
+      "offset": 1005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1147,
+      "offset": 1190,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1194,
+      "offset": 1237,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1223,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1318,
+      "offset": 1266,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1368,
+      "offset": 1425,
       "length": 9,
       "value": "\"#0B2C04\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/DeviceManager\/DeviceManager\/Public\/KTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1388,
+      "offset": 1445,
       "length": 4,
       "value": "0.15"
     },
