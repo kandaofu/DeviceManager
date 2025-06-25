@@ -4,29 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/CountdownTimer.swift</key>
-		<data>
-		NZU2hmn9T0PaaZiktGwxU1Q8ado=
-		</data>
 		<key>Headers/DeviceHelper.swift</key>
 		<data>
-		XcLF+kWlpZT1qaSwKs1TKFZh3uM=
-		</data>
-		<key>Headers/KTableViewCell.swift</key>
-		<data>
-		+1KBI0b0F4rREjG5AMfSEYrqYmY=
-		</data>
-		<key>Headers/KToast.swift</key>
-		<data>
-		jyYvRCBM+IR9xk5XGSyqJVrXBcI=
-		</data>
-		<key>Headers/KUIViewController.swift</key>
-		<data>
-		BqlTmyo1eoveiGyWQ36JFUMF00U=
-		</data>
-		<key>Headers/LocationManager.swift</key>
-		<data>
-		Dklnch0oTOnJCoxjATe8+XzSf2A=
+		ryXJKRZu/q8h0ixWRBCdlECkbeI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -34,157 +14,122 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z4lcN8cfbGnlF0tiIO1yNFmJlLA=
+		EyA7ZUiIMXMi+VaDignCMywuoOg=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EMlnGVu0DzPKm8dKitSBCK/3BX4=
+		y5jOI6eb2VjwGk87bugnV0axPXQ=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pKQWMKGQAoeRWjDlVHQ67/uZBKw=
+		Q2TOMU/TSBCJwiOZsuqSjasfM88=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EMlnGVu0DzPKm8dKitSBCK/3BX4=
+		y5jOI6eb2VjwGk87bugnV0axPXQ=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ojVmEtTwiknvwvhg/QcLyGqrfy0=
+		ndeQMf9iCf7DxbiLdbk5OrMxKls=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z4lcN8cfbGnlF0tiIO1yNFmJlLA=
+		EyA7ZUiIMXMi+VaDignCMywuoOg=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		l+Vewi3Hfa210afKM2kN9IY5a1g=
+		jKXt4XF/0N4ioafRFYMYjljEj1Y=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rmr9S0s11pNnsDKz+xO28aoYmYQ=
+		Q/qLMBqZeiHuJRwBB80hn9NQq78=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l+Vewi3Hfa210afKM2kN9IY5a1g=
+		jKXt4XF/0N4ioafRFYMYjljEj1Y=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tDUP8WVvlZAZVob4uN+YGfqR2gY=
+		VAVTnIvA2R6QjltbvU1D1frcXEs=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/CountdownTimer.swift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			C+iIUcjhk2RK7j/8+H3ihA3G+QVBNuZfD/fP80R12gM=
-			</data>
-		</dict>
 		<key>Headers/DeviceHelper.swift</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E12egE7uo0e/U7FAqk5+o1Jlp4L2g1hdIMuwJXajwuI=
-			</data>
-		</dict>
-		<key>Headers/KTableViewCell.swift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uHS00bh3TpfsmsUcihzSXEKToHksnTloXkh/Wd76ylw=
-			</data>
-		</dict>
-		<key>Headers/KToast.swift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uiae66Smp7fSZY5MoHeU22heWYw09e30dIjeCRd9f7U=
-			</data>
-		</dict>
-		<key>Headers/KUIViewController.swift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KCdgh7YPGIwnVhL2rjIK/saCtk9Gp4IvMVYEAryXVUc=
-			</data>
-		</dict>
-		<key>Headers/LocationManager.swift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+ypxkoVaEBzhqAkQn0hrPDmJdgokTyOonKdf8oQi0BY=
+			ohkO0j8WHl7gEG2myqcyZJ0onyYuTWtwwTTBLxBglU4=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0wyUvIc2ad7OfY+QDPxUEbES61n+uQ6V8kcqAcyy1B8=
+			OQHJM3L47LdMhgG/Zq0iUxxLLnRSTDDZ871AlW556YA=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z17yYD56Vbm8ON8Mp2XtxbGasMrsCcHyHdwoq3x9H/k=
+			2BaR3M1/yOHqsyViT3Sx83Atmnri5nD8nWv1X+d8Fk0=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8nhUVBnkdc83toG5uhh/kTfRQoqOS2p0NBiUUbS1nwk=
+			sYGjS3B8U1dzFkCforIrpBh/qucCgIxImbA0uQTPEiI=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z17yYD56Vbm8ON8Mp2XtxbGasMrsCcHyHdwoq3x9H/k=
+			2BaR3M1/yOHqsyViT3Sx83Atmnri5nD8nWv1X+d8Fk0=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3MvP8ApeNmcpbIAKDnEJPrkU64wjpkCq/xqGjPSNew=
+			psfd60wNGeJKxlucbJFkfq538BxnSApZimA7rQtKHpI=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0wyUvIc2ad7OfY+QDPxUEbES61n+uQ6V8kcqAcyy1B8=
+			OQHJM3L47LdMhgG/Zq0iUxxLLnRSTDDZ871AlW556YA=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5w4edsfw+6GF5TqU8ofXElK1b8P2aFcZHPg8pJJe2cQ=
+			aD4jES4LbOoNyzIshOMrBArMArcZJbQ27ZeCsUFNQ9U=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ca7tvspyouF2a8+wzGRKXh0YlJjzjCboDzs99w4F2Cc=
+			WnoAIIYCqEoLibBxgiZtHrw4Z9FjT531ps4wFvQNkKo=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5w4edsfw+6GF5TqU8ofXElK1b8P2aFcZHPg8pJJe2cQ=
+			aD4jES4LbOoNyzIshOMrBArMArcZJbQ27ZeCsUFNQ9U=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/zIPp+dHZP2KFSbXsMdOfUWsCN0QKcIGuNWZetb9cLU=
+			0GRf9utSMW56pds7dc4aeW0NKqX+9a5LG+dBh94qyD4=
 			</data>
 		</dict>
 	</dict>

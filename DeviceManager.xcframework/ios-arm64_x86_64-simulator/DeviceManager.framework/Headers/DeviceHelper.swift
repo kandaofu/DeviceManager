@@ -57,15 +57,7 @@ public class DeviceHelper: NSObject {
     
     /// open system setting page
     public func setSettingAlert(title:String,message:String="",buttonText:String="OK"){
-
-        let alertController = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        let sure = UIAlertAction.init(title: buttonText, style: UIAlertAction.Style.default) { _ in
-            if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-                UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
-            }
-        }
-        alertController.addAction(sure)
-        UIWindow.top?.rootViewController?.present(alertController, animated: true)
+        UIWindow.showSystemAlert(title: title,message: message,buttonText: buttonText)
     }
     
 }

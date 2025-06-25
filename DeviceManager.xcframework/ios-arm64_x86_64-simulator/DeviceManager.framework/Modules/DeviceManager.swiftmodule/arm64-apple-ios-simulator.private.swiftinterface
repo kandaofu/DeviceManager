@@ -122,6 +122,7 @@ extension UIKit.UIWindow {
   @_Concurrency.MainActor @preconcurrency public static var top: UIKit.UIWindow? {
     get
   }
+  @_Concurrency.MainActor @preconcurrency public static func showSystemAlert(title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
 }
 public enum KCornerMask {
   case topLeft
@@ -171,7 +172,6 @@ extension UIKit.UIDevice {
 }
 public protocol CountdownDelegate : AnyObject {
   func countdownDidUpdate(hourSting: Swift.String, minuteSting: Swift.String, secondSting: Swift.String)
-  func countdownDidUpdate(hourInt: Swift.Int, minuteInt: Swift.Int, secondInt: Swift.Int)
   func countdownDidFinish()
 }
 @objc public class CountdownTimer : ObjectiveC.NSObject {
