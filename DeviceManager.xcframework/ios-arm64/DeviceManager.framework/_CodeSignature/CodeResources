@@ -4,9 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/CountdownTimer.swift</key>
+		<data>
+		NZU2hmn9T0PaaZiktGwxU1Q8ado=
+		</data>
 		<key>Headers/DeviceHelper.swift</key>
 		<data>
 		XcLF+kWlpZT1qaSwKs1TKFZh3uM=
+		</data>
+		<key>Headers/KTableViewCell.swift</key>
+		<data>
+		+1KBI0b0F4rREjG5AMfSEYrqYmY=
+		</data>
+		<key>Headers/KToast.swift</key>
+		<data>
+		jyYvRCBM+IR9xk5XGSyqJVrXBcI=
+		</data>
+		<key>Headers/KUIViewController.swift</key>
+		<data>
+		BqlTmyo1eoveiGyWQ36JFUMF00U=
+		</data>
+		<key>Headers/LocationManager.swift</key>
+		<data>
+		Dklnch0oTOnJCoxjATe8+XzSf2A=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +34,11 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		NXZF3/ocVBPHL4RtC7N111TY+C4=
+		Z4lcN8cfbGnlF0tiIO1yNFmJlLA=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		SXPF58JKsIXagx8aT+OYFABOFoo=
+		sd8DBc6XDIZDeeBMLK/rk5bIBfI=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,15 +46,22 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		SXPF58JKsIXagx8aT+OYFABOFoo=
+		sd8DBc6XDIZDeeBMLK/rk5bIBfI=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sBjAbpBceEBgcJffN8ocLKaXC4I=
+		7NFBErp8uJMphPNDfNoelHoDI+A=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/CountdownTimer.swift</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C+iIUcjhk2RK7j/8+H3ihA3G+QVBNuZfD/fP80R12gM=
+			</data>
+		</dict>
 		<key>Headers/DeviceHelper.swift</key>
 		<dict>
 			<key>hash2</key>
@@ -42,18 +69,46 @@
 			E12egE7uo0e/U7FAqk5+o1Jlp4L2g1hdIMuwJXajwuI=
 			</data>
 		</dict>
+		<key>Headers/KTableViewCell.swift</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uHS00bh3TpfsmsUcihzSXEKToHksnTloXkh/Wd76ylw=
+			</data>
+		</dict>
+		<key>Headers/KToast.swift</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uiae66Smp7fSZY5MoHeU22heWYw09e30dIjeCRd9f7U=
+			</data>
+		</dict>
+		<key>Headers/KUIViewController.swift</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KCdgh7YPGIwnVhL2rjIK/saCtk9Gp4IvMVYEAryXVUc=
+			</data>
+		</dict>
+		<key>Headers/LocationManager.swift</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+ypxkoVaEBzhqAkQn0hrPDmJdgokTyOonKdf8oQi0BY=
+			</data>
+		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uOuULQhFCUKq8HqVvqydHlVGOZqCXrHboGsocwRViI=
+			0wyUvIc2ad7OfY+QDPxUEbES61n+uQ6V8kcqAcyy1B8=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+k9YzPNN6dzzQ+5VGUFOS12Idy8m+ctHE3WK6EH3VmM=
+			1qTP3DtXIQpAlhxJ5sSt/WftRdXG2hhv9UCZCzqHdes=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -67,14 +122,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+k9YzPNN6dzzQ+5VGUFOS12Idy8m+ctHE3WK6EH3VmM=
+			1qTP3DtXIQpAlhxJ5sSt/WftRdXG2hhv9UCZCzqHdes=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vL1U5BJKCjBMhj+NF5KEb8f+7CwBkf77EDGuXzaeeVY=
+			Si/UhYmau4eGGyKGlfrj6DJn1eBFocykvkY9L1P4R0k=
 			</data>
 		</dict>
 	</dict>

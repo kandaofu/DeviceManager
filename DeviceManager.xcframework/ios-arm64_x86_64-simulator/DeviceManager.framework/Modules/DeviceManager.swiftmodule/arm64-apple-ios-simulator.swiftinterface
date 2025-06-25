@@ -181,15 +181,15 @@ public protocol CountdownDelegate : AnyObject {
   public func stop()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class LocationManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+@objc @_inheritsConvenienceInitializers final public class LocationManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
   public static var shared: DeviceManager.LocationManager
-  public var latitude: Swift.Double
-  public var longitude: Swift.Double
-  public func initKey(latitudeKey: Swift.String, longitudeKey: Swift.String, administrativeAreaKey: Swift.String, isoCountryCodeKey: Swift.String, countryKey: Swift.String, thoroughfareKey: Swift.String, localityKey: Swift.String, subLocalityKey: Swift.String)
-  public func requestLocationState()
-  public func getLocationInfo(locationResult: @escaping (_ locationBool: Swift.Bool, _ locationInfo: [Swift.String : Any]) -> Swift.Void)
-  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
-  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  final public var latitude: Swift.Double
+  final public var longitude: Swift.Double
+  final public func initKey(latitudeKey: Swift.String, longitudeKey: Swift.String, administrativeAreaKey: Swift.String, isoCountryCodeKey: Swift.String, countryKey: Swift.String, thoroughfareKey: Swift.String, localityKey: Swift.String, subLocalityKey: Swift.String)
+  final public func requestLocationState()
+  final public func getLocationInfo(locationResult: @escaping (_ locationBool: Swift.Bool, _ locationInfo: [Swift.String : Any]) -> Swift.Void)
+  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc final public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc override dynamic public init()
   @objc deinit
 }
