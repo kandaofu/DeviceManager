@@ -59,6 +59,7 @@ extension Swift.String {
   public func setArribute(targetText: Swift.String, color: UIKit.UIColor?, font: UIKit.UIFont?, underline: Swift.Bool = false) -> Foundation.NSAttributedString
   public func isEqualTo(_ string: Swift.String) -> Swift.Bool
   public func toDict() -> [Swift.String : Any]?
+  public func removeBlank() -> Swift.String
   public func validCheck() -> Swift.Bool
 }
 extension UIKit.UILabel {
@@ -90,6 +91,7 @@ extension Swift.Int {
   public var stringValue: Swift.String {
     get
   }
+  public func kScale() -> CoreFoundation.CGFloat
 }
 extension Swift.Int64 {
   public var stringValue: Swift.String {
@@ -135,32 +137,20 @@ public enum KCornerMask {
 public struct CurrencySymbol {
 }
 @objc @_inheritsConvenienceInitializers public class KToast : ObjectiveC.NSObject {
-  public static func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 1.0)
+  public static func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 1.5)
   public static func loading(_ duration: Foundation.TimeInterval = 15, tintColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .clear)
   public static func hideLoading()
   @objc override dynamic public init()
   @objc deinit
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor @preconcurrency public static var totalMemorySize: Swift.String {
+  @_Concurrency.MainActor @preconcurrency public static var appName: Swift.String {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public static var usedMemorySize: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var batteryChargeLevel: Swift.Int {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var isDeviceFull: Swift.Int {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var isDeviceCharging: Swift.Int {
+  @_Concurrency.MainActor @preconcurrency public static var boundelId: Swift.String {
     get
   }
   @_Concurrency.MainActor @preconcurrency public static var deviceIdentifier: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var isConnectedUsingVPN: Swift.Int {
     get
   }
   @_Concurrency.MainActor @preconcurrency public static var width: CoreFoundation.CGFloat {
@@ -169,67 +159,13 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public static var height: CoreFoundation.CGFloat {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public static var nativeWidth: CoreFoundation.CGFloat {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var nativeHeight: CoreFoundation.CGFloat {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var nativeSize: CoreFoundation.CGFloat {
-    get
-  }
   @_Concurrency.MainActor @preconcurrency public static var safeTop: CoreFoundation.CGFloat {
     get
   }
   @_Concurrency.MainActor @preconcurrency public static var safeBottom: CoreFoundation.CGFloat {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public static var isRunningOnSimulator: Swift.Int {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var isDeviceJailbroken: Swift.Int {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var currentLanguageCode: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var phoneType: Swift.Int {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var timeZone: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var release: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var networkType: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var wifiName: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var wifiMac: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var isProxyServerEnabled: Swift.Int {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var totalDiskSize: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var freeDiskSize: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var deviceIpAddress: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var appName: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var boundelId: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var getOperator: Swift.String {
+  @_Concurrency.MainActor @preconcurrency public static var time: Swift.String {
     get
   }
 }
@@ -266,13 +202,13 @@ public protocol CountdownDelegate : AnyObject {
   public func customHide()
   public func getImage(inViewController vc: UIKit.UIViewController, result: @escaping (_ image: UIKit.UIImage) -> Swift.Void)
   public func getContact(inViewController vc: UIKit.UIViewController, result: @escaping (_ fullName: Swift.String?, _ phoneNumber: Swift.String?) -> Swift.Void)
-  public func setSettingAlert(inViewController vc: UIKit.UIViewController, title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
-  public func checkCamera(title: Swift.String = "", message: Swift.String = "Please enable camera access in Settings", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
-  public func checkLocation(title: Swift.String = "", message: Swift.String = "Allow location access to help verify your details and protect your account.", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
+  public func setSettingAlert(title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency open var contentTextFiled: UIKit.UITextField?
+  @_Concurrency.MainActor @preconcurrency public var emailFootterArray: [Swift.String]
   @_Concurrency.MainActor @preconcurrency public var emailViewCorner: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var cellEmailOffsetX: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonHeight: CoreFoundation.CGFloat
@@ -282,10 +218,8 @@ public protocol CountdownDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public var emailButtonFirstColor: UIKit.UIColor
   @_Concurrency.MainActor @preconcurrency public var emailButtonFont: UIKit.UIFont
   @_Concurrency.MainActor @preconcurrency public var emailButtontitleLeft: CoreFoundation.CGFloat
-  @_Concurrency.MainActor @preconcurrency public var emailFootterArray: [Swift.String]
   @_Concurrency.MainActor @preconcurrency public var emailHasLine: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var emailLineColor: UIKit.UIColor
-  @_Concurrency.MainActor @preconcurrency open var contentTextFiled: UIKit.UITextField?
   @_Concurrency.MainActor @preconcurrency public var didEndFill: (Swift.String) -> Swift.Void
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency open func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
@@ -308,9 +242,9 @@ extension UIKit.UITableViewCell {
   @_Concurrency.MainActor @preconcurrency public var navigationPopOpen: Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency open func back()
-  @_Concurrency.MainActor @preconcurrency public func backAction()
-  @_Concurrency.MainActor @preconcurrency public func fullPresent(_ targetFile: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency open func backAction()
+  @_Concurrency.MainActor @preconcurrency public func goBack()
+  @_Concurrency.MainActor @preconcurrency public func present(_ targetFile: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency public func dealWebMessage(web: WebKit.WKWebView, wkMessage: WebKit.WKScriptMessage, dict: [Swift.String : Any], webScripList: [Swift.String])
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -324,6 +258,7 @@ extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public static var topVC: UIKit.UIViewController? {
     get
   }
+  @_Concurrency.MainActor @preconcurrency public func bePushed(hideSelf: Swift.Bool = false)
 }
 extension DeviceManager.KCornerMask : Swift.Equatable {}
 extension DeviceManager.KCornerMask : Swift.Hashable {}

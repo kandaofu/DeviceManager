@@ -87,6 +87,9 @@ Alternatively, you can directly call backAction() under the back() method to imp
  *\ Enable custom mailbox completion popup view
  
   - setEmailFiled: 
+    - contentTextFiled: UITextField?
+    - emailFootterArray:[String] = ["@gmail.com", "@icloud.com", "@yahoo.com", "@outlook.com"]
+    - emailViewCorner:CGFloat = 4
     - cellEmailOffsetX:CGFloat = 72
     - emailButtonHeight:CGFloat = 48
     - emailButtonLeftMargin:CGFloat = 14
@@ -95,7 +98,6 @@ Alternatively, you can directly call backAction() under the back() method to imp
     - emailButtonFirstColor:UIColor = .blue
     - emailButtonFont:UIFont = UIFont(name: "PingFangSC-Medium", size: 13)!
     - emailButtontitleLeft:CGFloat = 12
-    - emailFootterArray:[String] = ["@gmail.com", "@icloud.com", "@yahoo.com", "@outlook.com"]
     - emailHasLine:Bool = true
     - emailLineColor:UIColor = UIColor(hex: "#EEF0F4")
     - didEndFill:(_ text:String) -> Void = {_  in}

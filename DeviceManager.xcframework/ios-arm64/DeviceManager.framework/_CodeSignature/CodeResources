@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DeviceHelper.swift</key>
 		<data>
-		q53mQ0396yG/rNCUl2jWaUBa0DU=
+		XcLF+kWlpZT1qaSwKs1TKFZh3uM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5aq5sHDWNbGuRasVS8yBjo3nJ4Y=
+		NXZF3/ocVBPHL4RtC7N111TY+C4=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yC8Aj5O2PCCyEuj0JmcwR+aHceM=
+		SXPF58JKsIXagx8aT+OYFABOFoo=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		pmgJ5GlpYfnwwif1wil/yEykT/k=
+		ba/tipHjUA+DQUWbESpo6JPISKU=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yC8Aj5O2PCCyEuj0JmcwR+aHceM=
+		SXPF58JKsIXagx8aT+OYFABOFoo=
 		</data>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NNgXLXp01swh1YqaOSfkeEEFv64=
+		sBjAbpBceEBgcJffN8ocLKaXC4I=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,42 +39,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ipMNvLVMLBzojrCOrvJ7vDaPYeOHw6kjARpiNnjoPfE=
+			E12egE7uo0e/U7FAqk5+o1Jlp4L2g1hdIMuwJXajwuI=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RDEmCViMbRbfUOGRltxq6TIzsqA+ucgGJBS1pXg4UL0=
+			/uOuULQhFCUKq8HqVvqydHlVGOZqCXrHboGsocwRViI=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpd8KuNxkLvlfFhX0m/d0FqIVGWrVDUw+M5acaCZoKc=
+			+k9YzPNN6dzzQ+5VGUFOS12Idy8m+ctHE3WK6EH3VmM=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y9bcTZTmU0mXU+Rx8WVHMhCLRb6+TyV9Afp2SIi4UuI=
+			MR8OlZeRb8wDPE1C/ANIITPg87TZp8I3i7DgsH7P6XM=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpd8KuNxkLvlfFhX0m/d0FqIVGWrVDUw+M5acaCZoKc=
+			+k9YzPNN6dzzQ+5VGUFOS12Idy8m+ctHE3WK6EH3VmM=
 			</data>
 		</dict>
 		<key>Modules/DeviceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3DSS3lkd69DnfPtreHCn5saNn43v6ywpeeSQDcO+IvY=
+			vL1U5BJKCjBMhj+NF5KEb8f+7CwBkf77EDGuXzaeeVY=
 			</data>
 		</dict>
 	</dict>
