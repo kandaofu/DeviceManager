@@ -17,9 +17,6 @@
   - getImage: Pull up the album camera to get the picture
   - getContact: Get the contact name and phone number selected by the user
   
-  - setSettingAlert: Open the system settings page
-  - setShareAppActivities: Share file resources to external
-  
   - checkCamera: Request camera permission, callback if successful, jump to pop-up window if failed
   - checkLocation: Request location permission, callback if successful, jump to pop-up window if failed
 
@@ -35,20 +32,19 @@
    *\get location information (needs to be initKey)
  
    
-##** CountdownTimer
+##** ClockCountdownTimer
 
 eg: 
-* var timer:CountdownTimer?
-* timer = CountdownTimer(delegate: self)
+* var timer:ClockCountdownTimer?
+* timer = ClockCountdownTimer(delegate: self)
 
   - startCountdown
   *\Enter the start time in seconds and start the countdown
   
   - stop: Active stop
   
-  #### CountdownDelegate
+  #### ClockCountdownDelegate
   - countdownDidUpdate(hourSting: String, minuteSting: String, secondSting: String)
-  - countdownDidUpdate(hourInt: Int, minuteInt: Int, secondInt: Int)
   - countdownDidFinish
   
   
@@ -73,7 +69,7 @@ Alternatively, you can directly call backAction() under the back() method to imp
  var placeHolderColor: Extended setting placeHolderColor
  
 
-##** KToast
+##** Toast
 
  - show
  
